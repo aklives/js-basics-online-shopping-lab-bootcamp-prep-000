@@ -54,7 +54,7 @@ function removeFromCart(item) {
     }
   }
   if (cart.length === original_length){
-    return 'That item is not in your cart.'
+    return 'That item is not in your cart.';
   }
 }
 
@@ -62,6 +62,7 @@ function placeOrder(cardNumber){
   if (arguments.length === 0){
     return 'Sorry, we don\'t have a credit card on file for you.';
   }
-  
-  
+  var sum = total();
+  cart = [];
+  return `Your total cost is ${sum}, which will be charged to the card ${cardNumber}`;
 }
