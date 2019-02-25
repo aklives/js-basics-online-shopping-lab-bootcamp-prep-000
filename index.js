@@ -40,7 +40,7 @@ else{
 
 function total() {
   var sum = 0;
-  for (var i = 0; i < cart.length-1; i++){
+  for (var i = 0; i < cart.length; i++){
     sum += cart[i].itemPrice;
   }
   return sum;
