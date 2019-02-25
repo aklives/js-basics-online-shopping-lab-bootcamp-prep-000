@@ -22,7 +22,7 @@ function viewCart() {
     sentence_array.push(' at $');
     sentence_array.push.(cart[i].itemPrice);
   }
-  return sentence_array;
+  return sentence_array.toString();
 }
 
 function total() {
