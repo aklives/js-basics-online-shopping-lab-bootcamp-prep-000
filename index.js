@@ -22,7 +22,11 @@ function viewCart() {
     sentence += cart[i].itemName;
     sentence += ' at $';
     sentence += cart[i].itemPrice;
-    if (i)
+    if (i === cart.length-1){
+      sentence += ".";
+    }
+    else {
+      sentence += ',';
   }
   return sentence;
 }
