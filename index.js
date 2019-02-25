@@ -47,10 +47,14 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var original_length = char.length;
   for (var i = 0; i < char.length; i++){
     if (char[i].itemName === item){
-      char.splice
+      char.splice(i, 1);
     }
+  }
+  if (char.length === original_length){
+    return 'That item is not in your cart.'
   }
 }
 
