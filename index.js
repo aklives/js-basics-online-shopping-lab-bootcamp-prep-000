@@ -16,7 +16,10 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  var sentence_array = ['In your cart, you have'];
+  for (var i = 0; i < cart.length; i++){
+    
+  }
 }
 
 function total() {
