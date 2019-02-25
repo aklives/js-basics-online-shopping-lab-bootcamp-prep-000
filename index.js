@@ -39,7 +39,11 @@ else{
 }
 
 function total() {
-  // write your code here
+  var sum = 0;
+  for (var i = 0; i < cart.length-1; i++){
+    sum += cart[i].itemPrice;
+  }
+  return sum;
 }
 
 function removeFromCart(item) {
