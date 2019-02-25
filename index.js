@@ -22,6 +22,8 @@ function viewCart() {
     sentence_array.push(' at $');
     sentence_array.push(cart[i].itemPrice);
   }
+  sentence_array.toString();
+  sentence_array
   return sentence_array.toString();
 }
 
