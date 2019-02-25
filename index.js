@@ -16,7 +16,7 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  var sentence_array = ['In your cart, you have'];
+  var sentence_array = 'In your cart, you have';
   for (var i = 0; i < cart.length; i++){
     sentence_array.push(cart[i].itemName);
     sentence_array.push(' at $');
