@@ -23,8 +23,8 @@ function viewCart() {
     sentence_array.push(cart[i].itemPrice);
   }
   sentence_array.toString();
-  sentence_array
-  return sentence_array.toString();
+  sentence_array.join();
+  return sentence_array;
 }
 
 function total() {
