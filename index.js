@@ -17,17 +17,14 @@ function addToCart(item) {
 
 function viewCart() {
   var sentence = 'In your cart, you have';
-  for (var i = 0; i < cart.length; i++){
+  for (var i = 0; i < cart.length-1; i++){
     sentence += ' ';
     sentence += cart[i].itemName;
     sentence += ' at $';
     sentence += cart[i].itemPrice;
-    if (i === cart.length-1){
-      sentence += ".";
-    }
-    else {
-      sentence += ',';
+    sentence += ',';
   }
+  sentence += `
   return sentence;
 }
 
