@@ -20,7 +20,7 @@ function viewCart() {
   for (var i = 0; i < cart.length; i++){
     sentence_array.push(cart[i].itemName);
     sentence_array.push(' at $');
-    sentence_array.push.(cart[i].itemPrice);
+    sentence_array.push(cart[i].itemPrice);
   }
   return sentence_array.toString();
 }
